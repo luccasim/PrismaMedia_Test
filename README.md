@@ -24,6 +24,7 @@ For the model a class is developed for the connection with the webservice
 - Swift 5.3
 - Git
 - UIKit, Foundation
+- Simulator on iphone 8
 
 ### Constraints
 

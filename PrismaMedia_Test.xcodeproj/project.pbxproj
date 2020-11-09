@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		844FC11D2559AE0400FDE7D6 /* UserSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844FC11C2559AE0400FDE7D6 /* UserSettingView.swift */; };
 		84538AD725593288001CC6BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84538AD625593288001CC6BD /* AppDelegate.swift */; };
 		84538AD925593288001CC6BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84538AD825593288001CC6BD /* SceneDelegate.swift */; };
 		84538ADE25593288001CC6BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84538ADC25593288001CC6BD /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		844FC11C2559AE0400FDE7D6 /* UserSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingView.swift; sourceTree = "<group>"; };
 		84538AD325593288001CC6BD /* PrismaMedia_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrismaMedia_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84538AD625593288001CC6BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84538AD825593288001CC6BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +109,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		844FC1222559AE8500FDE7D6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				84538BC6255990CC001CC6BD /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		844FC1272559AE9200FDE7D6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				84538BC7255990CC001CC6BD /* UserView.swift */,
+				844FC11C2559AE0400FDE7D6 /* UserSettingView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		844FC12C2559AE9D00FDE7D6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				84538BC8255990CC001CC6BD /* UserRequest.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		84538ACA25593288001CC6BD = {
 			isa = PBXGroup;
 			children = (
@@ -201,9 +228,9 @@
 		84538BB02559901D001CC6BD /* PrismaMedia_SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				84538BC6255990CC001CC6BD /* User.swift */,
-				84538BC8255990CC001CC6BD /* UserRequest.swift */,
-				84538BC7255990CC001CC6BD /* UserView.swift */,
+				844FC1222559AE8500FDE7D6 /* Models */,
+				844FC1272559AE9200FDE7D6 /* Views */,
+				844FC12C2559AE9D00FDE7D6 /* ViewModels */,
 				84538BBA2559901E001CC6BD /* Info.plist */,
 				84538BD9255991B5001CC6BD /* Supporting Files */,
 				84538BB72559901E001CC6BD /* Preview Content */,
@@ -419,6 +446,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				844FC11D2559AE0400FDE7D6 /* UserSettingView.swift in Sources */,
 				84538BB22559901D001CC6BD /* PrismaMedia_SwiftUIApp.swift in Sources */,
 				84538BC9255990CC001CC6BD /* User.swift in Sources */,
 				84538BD42559917A001CC6BD /* ReqResWS.swift in Sources */,

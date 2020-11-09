@@ -11,7 +11,7 @@ import SwiftUI
 struct PrismaMedia_SwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            UserView(userRequest: UserRequest())
+            UserView().environmentObject(UserRequest())
         }
     }
 }

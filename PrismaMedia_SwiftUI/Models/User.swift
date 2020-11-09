@@ -7,6 +7,7 @@
 
 import Foundation
 
+// This Model is not used (Because no presence of Persistance or Collection)
 struct User : Identifiable {
     let id : Int
     let fullname : String

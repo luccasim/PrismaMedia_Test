@@ -27,7 +27,7 @@ final class UserRequest : ObservableObject {
         
         self.webService = WebService ?? ReqResWS.shared
         self.avatar = UIImage()
-        self.fullName = Model.flatMap({"\($0.firstName) \($0.lastName)"}) ?? ""
+        self.fullName = Model.flatMap({"\($0.fullname)"}) ?? ""
         self.email = Model?.email ?? ""
         
     }
@@ -44,7 +44,7 @@ extension UserRequest : UserRequestAPI {
     typealias fetchResult = (Avatar:UIImage, FullName:String, Email:String)
     
     func fetchUser() {
-        
+                
         self.userFuture(Id: 1)
             .flatMap({self.avatarFuture(UserReponse: $0)})
             .receive(on: RunLoop.main)
@@ -87,7 +87,7 @@ extension UserRequest : UserRequestAPI {
                 if let image = data.flatMap({UIImage(data: $0)}) {
                     let result = fetchResult(Avatar: image,
                                              FullName:"\(UserReponse.data.firstName) \(UserReponse.data.lastName)",
-                                             Email:"String")
+                                             Email:UserReponse.data.email)
                     promise(.success(result))
                 } else {
                     promise(.failure(UIError.unavailableFetchingAvatarImage))
