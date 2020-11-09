@@ -14,6 +14,8 @@
 		84538AE325593289001CC6BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84538AE125593289001CC6BD /* LaunchScreen.storyboard */; };
 		84538AEE25593289001CC6BD /* PrismaMedia_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84538AED25593289001CC6BD /* PrismaMedia_TestTests.swift */; };
 		84538AF925593289001CC6BD /* PrismaMedia_TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84538AF825593289001CC6BD /* PrismaMedia_TestUITests.swift */; };
+		84538B1725594290001CC6BD /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84538B1625594290001CC6BD /* UserViewController.swift */; };
+		84538B1C255942B5001CC6BD /* UserSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84538B1B255942B5001CC6BD /* UserSettingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		84538AF825593289001CC6BD /* PrismaMedia_TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrismaMedia_TestUITests.swift; sourceTree = "<group>"; };
 		84538AFA25593289001CC6BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84538B09255933A9001CC6BD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		84538B1625594290001CC6BD /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		84538B1B255942B5001CC6BD /* UserSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +144,8 @@
 		84538B10255940A7001CC6BD /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				84538B1625594290001CC6BD /* UserViewController.swift */,
+				84538B1B255942B5001CC6BD /* UserSettingViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -290,6 +296,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				84538AD725593288001CC6BD /* AppDelegate.swift in Sources */,
+				84538B1725594290001CC6BD /* UserViewController.swift in Sources */,
+				84538B1C255942B5001CC6BD /* UserSettingViewController.swift in Sources */,
 				84538AD925593288001CC6BD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
