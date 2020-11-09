@@ -45,6 +45,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4mJ-U8-aVM">
                                         <rect key="frame" x="0.0" y="91" width="414" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="settingButtonPress:" destination="6sJ-Gi-I03" eventType="touchUpInside" id="h4q-0d-ED7"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -61,6 +64,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Rdz-u5-82d"/>
                     <connections>
+                        <outlet property="activityMonitor" destination="i8C-kP-qfc" id="BJL-Xs-K2Q"/>
                         <outlet property="avatarImageView" destination="5OH-op-F2v" id="jyT-oJ-QpU"/>
                         <outlet property="emailLabel" destination="XBk-k4-r0R" id="UjV-Qr-9EX"/>
                         <outlet property="fullnameLabel" destination="Suz-cI-11O" id="vuQ-Zi-Ufz"/>
@@ -82,22 +86,20 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="nUM-mU-x3X">
-                                <rect key="frame" x="0.0" y="441" width="414" height="121"/>
+                                <rect key="frame" x="0.0" y="414" width="414" height="148"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I99-FF-ivx">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phd-Ve-UkW">
-                                        <rect key="frame" x="0.0" y="45.5" width="414" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Iaf-To-AyH">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="civ-kb-2lz">
+                                        <rect key="frame" x="0.0" y="59" width="414" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M3T-sr-6YW">
-                                        <rect key="frame" x="0.0" y="91" width="414" height="30"/>
+                                        <rect key="frame" x="0.0" y="118" width="414" height="30"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
                                             <action selector="pressButton:" destination="fB7-Gh-Xfd" eventType="touchUpInside" id="IIL-sH-9qv"/>
@@ -116,8 +118,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="aiP-2T-xvF"/>
                     <connections>
-                        <outlet property="emailLabel" destination="phd-Ve-UkW" id="Y5J-FX-jDL"/>
-                        <outlet property="fullnameLabel" destination="I99-FF-ivx" id="oyx-0H-tGB"/>
+                        <outlet property="emailTextField" destination="civ-kb-2lz" id="la8-vF-FoK"/>
+                        <outlet property="fullnameTextField" destination="Iaf-To-AyH" id="gas-uD-Woy"/>
                         <outlet property="settingButton" destination="M3T-sr-6YW" id="WZ9-u3-6p2"/>
                     </connections>
                 </viewController>
