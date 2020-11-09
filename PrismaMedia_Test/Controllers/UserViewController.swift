@@ -9,6 +9,8 @@ import UIKit
 
 class UserViewController: UIViewController {
     
+    // MARK: - Outlets
+    
     @IBOutlet weak var avatarImageView: UIImageView!
     @IBOutlet weak var fullnameLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
@@ -21,6 +23,8 @@ class UserViewController: UIViewController {
     
     private var user : User?
     private var userRequest : ReqResWS = ReqResWS.shared
+    
+    // MARK: - VC Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,25 +40,6 @@ class UserViewController: UIViewController {
         self.set(User: nil)
         
         self.fetchUser()
-    }
-    
-    public func set(User:User?) {
-        
-        // Stop Activity Monitor and show user info if user exist
-        if let newUser = User {
-            self.activityMonitor.stopAnimating()
-            self.userStackView.isHidden = false
-            self.fullnameLabel.text = newUser.fullName
-            self.emailLabel.text = newUser.email
-            self.user = newUser
-        }
-        
-        // Start Activity Monitor and hide user info if nil
-        else {
-            self.activityMonitor.startAnimating()
-            self.userStackView.isHidden = true
-        }
-        
     }
     
     @IBAction func settingButtonPress(_ sender: UIButton) {
@@ -76,8 +61,32 @@ class UserViewController: UIViewController {
             }
             
         default: break
+            
         }
     }
+    
+    // MARK: - Setters
+    
+    public func set(User:User?) {
+        
+        // Stop Activity Monitor and show user info if user exist
+        if let newUser = User {
+            self.activityMonitor.stopAnimating()
+            self.userStackView.isHidden = false
+            self.fullnameLabel.text = newUser.fullName
+            self.emailLabel.text = newUser.email
+            self.user = newUser
+        }
+        
+        // Start Activity Monitor and hide user info if nil
+        else {
+            self.activityMonitor.startAnimating()
+            self.userStackView.isHidden = true
+        }
+        
+    }
+    
+    // MARK: - Async Fetching
 
     private func fetchUser() {
         
