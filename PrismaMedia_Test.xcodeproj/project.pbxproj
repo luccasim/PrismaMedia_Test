@@ -9,12 +9,16 @@
 /* Begin PBXBuildFile section */
 		84538AD725593288001CC6BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84538AD625593288001CC6BD /* AppDelegate.swift */; };
 		84538AD925593288001CC6BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84538AD825593288001CC6BD /* SceneDelegate.swift */; };
-		84538ADB25593288001CC6BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84538ADA25593288001CC6BD /* ViewController.swift */; };
 		84538ADE25593288001CC6BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84538ADC25593288001CC6BD /* Main.storyboard */; };
 		84538AE025593289001CC6BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84538ADF25593289001CC6BD /* Assets.xcassets */; };
 		84538AE325593289001CC6BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84538AE125593289001CC6BD /* LaunchScreen.storyboard */; };
-		84538AEE25593289001CC6BD /* PrismaMedia_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84538AED25593289001CC6BD /* PrismaMedia_TestTests.swift */; };
 		84538AF925593289001CC6BD /* PrismaMedia_TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84538AF825593289001CC6BD /* PrismaMedia_TestUITests.swift */; };
+		84538B1725594290001CC6BD /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84538B1625594290001CC6BD /* UserViewController.swift */; };
+		84538B1C255942B5001CC6BD /* UserSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84538B1B255942B5001CC6BD /* UserSettingViewController.swift */; };
+		84538B2125594A5E001CC6BD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84538B2025594A5E001CC6BD /* User.swift */; };
+		84538B8B25597ADA001CC6BD /* ReqResWS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84538B8A25597ADA001CC6BD /* ReqResWS.swift */; };
+		84538B992559808A001CC6BD /* ReqResWS_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84538B982559808A001CC6BD /* ReqResWS_Tests.swift */; };
+		84538BA1255980E2001CC6BD /* ReqResWSReponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 84538BA0255980E2001CC6BD /* ReqResWSReponse.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,24 +36,45 @@
 			remoteGlobalIDString = 84538AD225593288001CC6BD;
 			remoteInfo = PrismaMedia_Test;
 		};
+		84538B51255959FC001CC6BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84538ACB25593288001CC6BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84538B3A255959FB001CC6BD;
+			remoteInfo = PrismaMedia_UIKit_Tests;
+		};
+		84538B5C255959FC001CC6BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84538ACB25593288001CC6BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84538B3A255959FB001CC6BD;
+			remoteInfo = PrismaMedia_UIKit_Tests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		84538AD325593288001CC6BD /* PrismaMedia_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrismaMedia_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84538AD625593288001CC6BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84538AD825593288001CC6BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		84538ADA25593288001CC6BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		84538ADD25593288001CC6BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84538ADF25593289001CC6BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84538AE225593289001CC6BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84538AE425593289001CC6BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84538AE925593289001CC6BD /* PrismaMedia_TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrismaMedia_TestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		84538AED25593289001CC6BD /* PrismaMedia_TestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrismaMedia_TestTests.swift; sourceTree = "<group>"; };
 		84538AEF25593289001CC6BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84538AF425593289001CC6BD /* PrismaMedia_TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrismaMedia_TestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84538AF825593289001CC6BD /* PrismaMedia_TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrismaMedia_TestUITests.swift; sourceTree = "<group>"; };
 		84538AFA25593289001CC6BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84538B09255933A9001CC6BD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		84538B1625594290001CC6BD /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		84538B1B255942B5001CC6BD /* UserSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingViewController.swift; sourceTree = "<group>"; };
+		84538B2025594A5E001CC6BD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		84538B3B255959FB001CC6BD /* PrismaMedia_UIKit_Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrismaMedia_UIKit_Tests.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84538B50255959FC001CC6BD /* PrismaMedia_UIKit_TestsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrismaMedia_UIKit_TestsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84538B5B255959FC001CC6BD /* PrismaMedia_UIKit_TestsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrismaMedia_UIKit_TestsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84538B8A25597ADA001CC6BD /* ReqResWS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReqResWS.swift; sourceTree = "<group>"; };
+		84538B982559808A001CC6BD /* ReqResWS_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReqResWS_Tests.swift; sourceTree = "<group>"; };
+		84538BA0255980E2001CC6BD /* ReqResWSReponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ReqResWSReponse.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +93,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		84538AF125593289001CC6BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84538B38255959FB001CC6BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84538B4D255959FC001CC6BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84538B58255959FC001CC6BD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -94,6 +140,9 @@
 				84538AD325593288001CC6BD /* PrismaMedia_Test.app */,
 				84538AE925593289001CC6BD /* PrismaMedia_TestTests.xctest */,
 				84538AF425593289001CC6BD /* PrismaMedia_TestUITests.xctest */,
+				84538B3B255959FB001CC6BD /* PrismaMedia_UIKit_Tests.app */,
+				84538B50255959FC001CC6BD /* PrismaMedia_UIKit_TestsTests.xctest */,
+				84538B5B255959FC001CC6BD /* PrismaMedia_UIKit_TestsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,13 +150,11 @@
 		84538AD525593288001CC6BD /* PrismaMedia_Test */ = {
 			isa = PBXGroup;
 			children = (
-				84538AD625593288001CC6BD /* AppDelegate.swift */,
-				84538AD825593288001CC6BD /* SceneDelegate.swift */,
-				84538ADA25593288001CC6BD /* ViewController.swift */,
-				84538ADC25593288001CC6BD /* Main.storyboard */,
-				84538ADF25593289001CC6BD /* Assets.xcassets */,
-				84538AE125593289001CC6BD /* LaunchScreen.storyboard */,
 				84538AE425593289001CC6BD /* Info.plist */,
+				84538B12255940C0001CC6BD /* Models */,
+				84538B11255940B8001CC6BD /* Views */,
+				84538B10255940A7001CC6BD /* Controllers */,
+				84538B0C25594088001CC6BD /* Supporting Files */,
 			);
 			path = PrismaMedia_Test;
 			sourceTree = "<group>";
@@ -115,8 +162,8 @@
 		84538AEC25593289001CC6BD /* PrismaMedia_TestTests */ = {
 			isa = PBXGroup;
 			children = (
-				84538AED25593289001CC6BD /* PrismaMedia_TestTests.swift */,
 				84538AEF25593289001CC6BD /* Info.plist */,
+				84538B982559808A001CC6BD /* ReqResWS_Tests.swift */,
 			);
 			path = PrismaMedia_TestTests;
 			sourceTree = "<group>";
@@ -128,6 +175,44 @@
 				84538AFA25593289001CC6BD /* Info.plist */,
 			);
 			path = PrismaMedia_TestUITests;
+			sourceTree = "<group>";
+		};
+		84538B0C25594088001CC6BD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84538BA0255980E2001CC6BD /* ReqResWSReponse.json */,
+				84538AD625593288001CC6BD /* AppDelegate.swift */,
+				84538AD825593288001CC6BD /* SceneDelegate.swift */,
+				84538ADF25593289001CC6BD /* Assets.xcassets */,
+				84538AE125593289001CC6BD /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84538B10255940A7001CC6BD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				84538B1625594290001CC6BD /* UserViewController.swift */,
+				84538B1B255942B5001CC6BD /* UserSettingViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		84538B11255940B8001CC6BD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				84538ADC25593288001CC6BD /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		84538B12255940C0001CC6BD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				84538B2025594A5E001CC6BD /* User.swift */,
+				84538B8A25597ADA001CC6BD /* ReqResWS.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +271,59 @@
 			productReference = 84538AF425593289001CC6BD /* PrismaMedia_TestUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		84538B3A255959FB001CC6BD /* PrismaMedia_UIKit_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84538B62255959FC001CC6BD /* Build configuration list for PBXNativeTarget "PrismaMedia_UIKit_Tests" */;
+			buildPhases = (
+				84538B37255959FB001CC6BD /* Sources */,
+				84538B38255959FB001CC6BD /* Frameworks */,
+				84538B39255959FB001CC6BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PrismaMedia_UIKit_Tests;
+			productName = PrismaMedia_UIKit_Tests;
+			productReference = 84538B3B255959FB001CC6BD /* PrismaMedia_UIKit_Tests.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84538B4F255959FC001CC6BD /* PrismaMedia_UIKit_TestsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84538B65255959FC001CC6BD /* Build configuration list for PBXNativeTarget "PrismaMedia_UIKit_TestsTests" */;
+			buildPhases = (
+				84538B4C255959FC001CC6BD /* Sources */,
+				84538B4D255959FC001CC6BD /* Frameworks */,
+				84538B4E255959FC001CC6BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84538B52255959FC001CC6BD /* PBXTargetDependency */,
+			);
+			name = PrismaMedia_UIKit_TestsTests;
+			productName = PrismaMedia_UIKit_TestsTests;
+			productReference = 84538B50255959FC001CC6BD /* PrismaMedia_UIKit_TestsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		84538B5A255959FC001CC6BD /* PrismaMedia_UIKit_TestsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84538B68255959FC001CC6BD /* Build configuration list for PBXNativeTarget "PrismaMedia_UIKit_TestsUITests" */;
+			buildPhases = (
+				84538B57255959FC001CC6BD /* Sources */,
+				84538B58255959FC001CC6BD /* Frameworks */,
+				84538B59255959FC001CC6BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84538B5D255959FC001CC6BD /* PBXTargetDependency */,
+			);
+			name = PrismaMedia_UIKit_TestsUITests;
+			productName = PrismaMedia_UIKit_TestsUITests;
+			productReference = 84538B5B255959FC001CC6BD /* PrismaMedia_UIKit_TestsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -200,11 +338,23 @@
 					};
 					84538AE825593289001CC6BD = {
 						CreatedOnToolsVersion = 12.0.1;
+						LastSwiftMigration = 1200;
 						TestTargetID = 84538AD225593288001CC6BD;
 					};
 					84538AF325593289001CC6BD = {
 						CreatedOnToolsVersion = 12.0.1;
 						TestTargetID = 84538AD225593288001CC6BD;
+					};
+					84538B3A255959FB001CC6BD = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					84538B4F255959FC001CC6BD = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 84538B3A255959FB001CC6BD;
+					};
+					84538B5A255959FC001CC6BD = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 84538B3A255959FB001CC6BD;
 					};
 				};
 			};
@@ -224,6 +374,9 @@
 				84538AD225593288001CC6BD /* PrismaMedia_Test */,
 				84538AE825593289001CC6BD /* PrismaMedia_TestTests */,
 				84538AF325593289001CC6BD /* PrismaMedia_TestUITests */,
+				84538B3A255959FB001CC6BD /* PrismaMedia_UIKit_Tests */,
+				84538B4F255959FC001CC6BD /* PrismaMedia_UIKit_TestsTests */,
+				84538B5A255959FC001CC6BD /* PrismaMedia_UIKit_TestsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -233,6 +386,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84538BA1255980E2001CC6BD /* ReqResWSReponse.json in Resources */,
 				84538AE325593289001CC6BD /* LaunchScreen.storyboard in Resources */,
 				84538AE025593289001CC6BD /* Assets.xcassets in Resources */,
 				84538ADE25593288001CC6BD /* Main.storyboard in Resources */,
@@ -253,6 +407,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		84538B39255959FB001CC6BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84538B4E255959FC001CC6BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84538B59255959FC001CC6BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -260,8 +435,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84538ADB25593288001CC6BD /* ViewController.swift in Sources */,
 				84538AD725593288001CC6BD /* AppDelegate.swift in Sources */,
+				84538B1725594290001CC6BD /* UserViewController.swift in Sources */,
+				84538B1C255942B5001CC6BD /* UserSettingViewController.swift in Sources */,
+				84538B8B25597ADA001CC6BD /* ReqResWS.swift in Sources */,
+				84538B2125594A5E001CC6BD /* User.swift in Sources */,
 				84538AD925593288001CC6BD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,7 +448,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84538AEE25593289001CC6BD /* PrismaMedia_TestTests.swift in Sources */,
+				84538B992559808A001CC6BD /* ReqResWS_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +457,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				84538AF925593289001CC6BD /* PrismaMedia_TestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84538B37255959FB001CC6BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84538B4C255959FC001CC6BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84538B57255959FC001CC6BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +493,16 @@
 			isa = PBXTargetDependency;
 			target = 84538AD225593288001CC6BD /* PrismaMedia_Test */;
 			targetProxy = 84538AF525593289001CC6BD /* PBXContainerItemProxy */;
+		};
+		84538B52255959FC001CC6BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84538B3A255959FB001CC6BD /* PrismaMedia_UIKit_Tests */;
+			targetProxy = 84538B51255959FC001CC6BD /* PBXContainerItemProxy */;
+		};
+		84538B5D255959FC001CC6BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84538B3A255959FB001CC6BD /* PrismaMedia_UIKit_Tests */;
+			targetProxy = 84538B5C255959FC001CC6BD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -476,6 +685,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 32DX3M943S;
 				INFOPLIST_FILE = PrismaMedia_TestTests/Info.plist;
@@ -487,6 +697,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "fr.devios.PrismaMedia-TestTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PrismaMedia_Test.app/PrismaMedia_Test";
@@ -498,6 +709,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 32DX3M943S;
 				INFOPLIST_FILE = PrismaMedia_TestTests/Info.plist;
@@ -555,6 +767,124 @@
 			};
 			name = Release;
 		};
+		84538B63255959FC001CC6BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 32DX3M943S;
+				INFOPLIST_FILE = PrismaMedia_UIKit_Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.devios.PrismaMedia-UIKit-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84538B64255959FC001CC6BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 32DX3M943S;
+				INFOPLIST_FILE = PrismaMedia_UIKit_Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.devios.PrismaMedia-UIKit-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		84538B66255959FC001CC6BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 32DX3M943S;
+				INFOPLIST_FILE = PrismaMedia_UIKit_TestsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.devios.PrismaMedia-UIKit-TestsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PrismaMedia_UIKit_Tests.app/PrismaMedia_UIKit_Tests";
+			};
+			name = Debug;
+		};
+		84538B67255959FC001CC6BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 32DX3M943S;
+				INFOPLIST_FILE = PrismaMedia_UIKit_TestsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.devios.PrismaMedia-UIKit-TestsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PrismaMedia_UIKit_Tests.app/PrismaMedia_UIKit_Tests";
+			};
+			name = Release;
+		};
+		84538B69255959FC001CC6BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 32DX3M943S;
+				INFOPLIST_FILE = PrismaMedia_UIKit_TestsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.devios.PrismaMedia-UIKit-TestsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PrismaMedia_UIKit_Tests;
+			};
+			name = Debug;
+		};
+		84538B6A255959FC001CC6BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 32DX3M943S;
+				INFOPLIST_FILE = PrismaMedia_UIKit_TestsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.devios.PrismaMedia-UIKit-TestsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PrismaMedia_UIKit_Tests;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -590,6 +920,33 @@
 			buildConfigurations = (
 				84538B0425593289001CC6BD /* Debug */,
 				84538B0525593289001CC6BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84538B62255959FC001CC6BD /* Build configuration list for PBXNativeTarget "PrismaMedia_UIKit_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84538B63255959FC001CC6BD /* Debug */,
+				84538B64255959FC001CC6BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84538B65255959FC001CC6BD /* Build configuration list for PBXNativeTarget "PrismaMedia_UIKit_TestsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84538B66255959FC001CC6BD /* Debug */,
+				84538B67255959FC001CC6BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84538B68255959FC001CC6BD /* Build configuration list for PBXNativeTarget "PrismaMedia_UIKit_TestsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84538B69255959FC001CC6BD /* Debug */,
+				84538B6A255959FC001CC6BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
