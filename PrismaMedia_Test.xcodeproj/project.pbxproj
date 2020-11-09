@@ -49,6 +49,7 @@
 		84538AF425593289001CC6BD /* PrismaMedia_TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrismaMedia_TestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84538AF825593289001CC6BD /* PrismaMedia_TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrismaMedia_TestUITests.swift; sourceTree = "<group>"; };
 		84538AFA25593289001CC6BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84538B09255933A9001CC6BD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +80,7 @@
 		84538ACA25593288001CC6BD = {
 			isa = PBXGroup;
 			children = (
+				84538B09255933A9001CC6BD /* README.md */,
 				84538AD525593288001CC6BD /* PrismaMedia_Test */,
 				84538AEC25593289001CC6BD /* PrismaMedia_TestTests */,
 				84538AF725593289001CC6BD /* PrismaMedia_TestUITests */,
