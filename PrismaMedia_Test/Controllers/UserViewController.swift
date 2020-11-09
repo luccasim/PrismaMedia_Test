@@ -24,7 +24,7 @@ class UserViewController: UIViewController {
     private var user : User?
     private var userRequest : ReqResWS = ReqResWS.shared
     
-    // MARK: - VC Life Cycle
+    // MARK: - Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -87,17 +87,68 @@ class UserViewController: UIViewController {
     }
     
     // MARK: - Async Fetching
+    
+    private var retry = 3
 
     private func fetchUser() {
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            let user = User(fullName: "Luc CASIMIR", email: "casimir.luc@gmail.com", avatarURL: nil)
-            self.set(User: user)
+        guard retry > 0 else {
+            print("Default Error Handler, unable to connect with webservice")
+            return
+        }
+
+        self.userRequest.taskGetUser(Id: 1) { (result) in
+            
+            switch result {
+            
+            case .success(let reponse):
+                
+                let avatarURL = URLComponents(string: reponse.data.avatar)?.url
+                
+                self.user = User(
+                    fullName: "\(reponse.data.firstName) \(reponse.data.lastName.uppercased())",
+                    email: reponse.data.email,
+                    avatarURL: avatarURL)
+                
+                // Fetch image and when display info if retrieve
+                self.fetchAvatarImage(avatarURL: avatarURL)
+                
+                
+            case .failure(let error):
+                
+                print("Debug => \(error.localizedDescription)")
+                
+                // Not handing Error! Maybe retry 3 time a call after 15 secondes ?
+                DispatchQueue.main.asyncAfter(deadline: .now() + 15) {
+                    self.retry -= 1
+                    self.fetchUser()
+                }
+                
+                break
+            }
         }
         
     }
     
-    private func fetchAvatarImage() {
+    private func fetchAvatarImage(avatarURL:URL?) {
+            
+        if let url = avatarURL {
+            
+            URLSession.shared.dataTask(with: url) { (data, rep, err) in
                 
+                if let error = err {
+                    print("Can't retrieve avatar image -> \(error.localizedDescription)")
+                }
+                
+                else if let image = data.flatMap({UIImage(data: $0)}) {
+                    DispatchQueue.main.async {
+                        self.avatarImageView.image = image
+                        self.set(User: self.user)
+                    }
+                }
+                
+            }.resume()
+        }
+        
     }
 }

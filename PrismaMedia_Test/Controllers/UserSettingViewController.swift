@@ -9,20 +9,27 @@ import UIKit
 
 class UserSettingViewController: UIViewController {
     
+    // MARK: - Outlets
+    
     
     @IBOutlet weak var fullnameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var settingButton: UIButton!
     
+    // MARK: - Models
+    
     weak var userVC : UserViewController?
     var newUser : User!
     
+    // MARK: - Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.newUser = User(fullName: "", email: "", avatarURL: nil)
     }
+    
+    // MARK: - Actions
     
     @IBAction func pressButton(_ sender: UIButton) {
         
