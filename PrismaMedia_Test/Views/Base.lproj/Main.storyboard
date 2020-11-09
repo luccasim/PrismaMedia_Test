@@ -16,6 +16,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="i8C-kP-qfc">
+                                <rect key="frame" x="157" y="425" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="i8C-kP-qfc" secondAttribute="height" multiplier="1:1" id="IDM-1F-oBU"/>
+                                    <constraint firstAttribute="width" constant="100" id="wzX-cg-hki"/>
+                                </constraints>
+                            </activityIndicatorView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5OH-op-F2v">
                                 <rect key="frame" x="97" y="156" width="220" height="198"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -38,9 +45,6 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4mJ-U8-aVM">
                                         <rect key="frame" x="0.0" y="91" width="414" height="30"/>
                                         <state key="normal" title="Button"/>
-                                        <connections>
-                                            <segue destination="fB7-Gh-Xfd" kind="show" id="kbx-zU-IaU"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -49,8 +53,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="0rK-VI-huo" firstAttribute="bottom" secondItem="msx-DX-JZH" secondAttribute="bottom" constant="300" id="HFd-Xn-RQd"/>
+                            <constraint firstItem="i8C-kP-qfc" firstAttribute="centerX" secondItem="0rK-VI-huo" secondAttribute="centerX" id="IbJ-9K-x1x"/>
                             <constraint firstItem="XBk-k4-r0R" firstAttribute="width" secondItem="7wq-Yi-o2i" secondAttribute="width" id="jLU-9U-Vs9"/>
                             <constraint firstItem="XBk-k4-r0R" firstAttribute="centerX" secondItem="0rK-VI-huo" secondAttribute="centerX" id="mEY-LB-xCy"/>
+                            <constraint firstItem="i8C-kP-qfc" firstAttribute="centerY" secondItem="0rK-VI-huo" secondAttribute="centerY" id="vaA-YL-LTu"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Rdz-u5-82d"/>
@@ -59,6 +65,8 @@
                         <outlet property="emailLabel" destination="XBk-k4-r0R" id="UjV-Qr-9EX"/>
                         <outlet property="fullnameLabel" destination="Suz-cI-11O" id="vuQ-Zi-Ufz"/>
                         <outlet property="settingButton" destination="4mJ-U8-aVM" id="gtn-X7-30z"/>
+                        <outlet property="userStackView" destination="msx-DX-JZH" id="5Hz-z9-Itd"/>
+                        <segue destination="fB7-Gh-Xfd" kind="show" identifier="showSetter" id="qIZ-7j-R9y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FnD-rb-n2K" sceneMemberID="firstResponder"/>
@@ -91,6 +99,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M3T-sr-6YW">
                                         <rect key="frame" x="0.0" y="91" width="414" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="pressButton:" destination="fB7-Gh-Xfd" eventType="touchUpInside" id="IIL-sH-9qv"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>

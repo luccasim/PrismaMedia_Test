@@ -16,6 +16,7 @@
 		84538AF925593289001CC6BD /* PrismaMedia_TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84538AF825593289001CC6BD /* PrismaMedia_TestUITests.swift */; };
 		84538B1725594290001CC6BD /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84538B1625594290001CC6BD /* UserViewController.swift */; };
 		84538B1C255942B5001CC6BD /* UserSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84538B1B255942B5001CC6BD /* UserSettingViewController.swift */; };
+		84538B2125594A5E001CC6BD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84538B2025594A5E001CC6BD /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		84538B09255933A9001CC6BD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		84538B1625594290001CC6BD /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		84538B1B255942B5001CC6BD /* UserSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingViewController.swift; sourceTree = "<group>"; };
+		84538B2025594A5E001CC6BD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 		84538B12255940C0001CC6BD /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				84538B2025594A5E001CC6BD /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				84538AD725593288001CC6BD /* AppDelegate.swift in Sources */,
 				84538B1725594290001CC6BD /* UserViewController.swift in Sources */,
 				84538B1C255942B5001CC6BD /* UserSettingViewController.swift in Sources */,
+				84538B2125594A5E001CC6BD /* User.swift in Sources */,
 				84538AD925593288001CC6BD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
