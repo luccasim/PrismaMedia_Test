@@ -41,8 +41,8 @@ class UserViewController: UIViewController {
         if let newUser = User {
             self.activityMonitor.stopAnimating()
             self.userStackView.isHidden = false
-            self.fullnameLabel.text = self.user?.fullName
-            self.emailLabel.text = self.user?.email
+            self.fullnameLabel.text = newUser.fullName
+            self.emailLabel.text = newUser.email
             self.user = newUser
         }
         
@@ -78,7 +78,7 @@ class UserViewController: UIViewController {
 
     func fetchUser() {
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
             let user = User(fullName: "Luc CASIMIR", email: "casimir.luc@gmail.com", avatarURL: nil)
             self.set(User: user)
         }

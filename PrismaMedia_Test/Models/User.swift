@@ -8,7 +8,7 @@
 import Foundation
 
 struct User {
-    let fullName : String
-    let email : String
+    var fullName : String
+    var email : String
     let avatarURL : URL?
 }
