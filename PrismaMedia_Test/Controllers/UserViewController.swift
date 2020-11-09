@@ -29,12 +29,15 @@ class UserViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Settings outlets
         self.avatarImageView.image = nil
         self.fullnameLabel.text = nil
         self.emailLabel.text = nil
         self.settingButton.setTitle("Modifier", for: .normal)
         self.activityMonitor.hidesWhenStopped = true
+        self.navigationController?.navigationBar.isHidden = true
+        self.settingButton.layer.borderWidth = 1
+        self.settingButton.layer.borderColor = UIColor.white.cgColor
         
         // No Persistance.
         self.set(User: nil)

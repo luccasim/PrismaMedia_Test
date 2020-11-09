@@ -27,6 +27,15 @@ class UserSettingViewController: UIViewController {
         super.viewDidLoad()
 
         self.newUser = User(fullName: "", email: "", avatarURL: nil)
+        self.settingButton.setTitle("Valider", for: .normal)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = false
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = true
     }
     
     // MARK: - Actions
