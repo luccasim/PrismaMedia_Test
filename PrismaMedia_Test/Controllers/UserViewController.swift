@@ -31,6 +31,8 @@ class UserViewController: UIViewController {
         
         // No Persistance.
         self.set(User: nil)
+        
+        self.fetchUser()
     }
     
     public func set(User:User?) {
@@ -38,6 +40,7 @@ class UserViewController: UIViewController {
         // Stop Activity Monitor and show user info if user exist
         if let newUser = User {
             self.activityMonitor.stopAnimating()
+            self.userStackView.isHidden = false
             self.fullnameLabel.text = self.user?.fullName
             self.emailLabel.text = self.user?.email
             self.user = newUser
@@ -46,7 +49,7 @@ class UserViewController: UIViewController {
         // Start Activity Monitor and hide user info if nil
         else {
             self.activityMonitor.startAnimating()
-            self.userStackView.isHidden = false
+            self.userStackView.isHidden = true
         }
         
     }
@@ -73,4 +76,12 @@ class UserViewController: UIViewController {
         }
     }
 
+    func fetchUser() {
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+            let user = User(fullName: "Luc CASIMIR", email: "casimir.luc@gmail.com", avatarURL: nil)
+            self.set(User: user)
+        }
+        
+    }
 }

@@ -34,6 +34,20 @@
 			remoteGlobalIDString = 84538AD225593288001CC6BD;
 			remoteInfo = PrismaMedia_Test;
 		};
+		84538B51255959FC001CC6BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84538ACB25593288001CC6BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84538B3A255959FB001CC6BD;
+			remoteInfo = PrismaMedia_UIKit_Tests;
+		};
+		84538B5C255959FC001CC6BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84538ACB25593288001CC6BD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84538B3A255959FB001CC6BD;
+			remoteInfo = PrismaMedia_UIKit_Tests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +68,9 @@
 		84538B1625594290001CC6BD /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		84538B1B255942B5001CC6BD /* UserSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingViewController.swift; sourceTree = "<group>"; };
 		84538B2025594A5E001CC6BD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		84538B3B255959FB001CC6BD /* PrismaMedia_UIKit_Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrismaMedia_UIKit_Tests.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84538B50255959FC001CC6BD /* PrismaMedia_UIKit_TestsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrismaMedia_UIKit_TestsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84538B5B255959FC001CC6BD /* PrismaMedia_UIKit_TestsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrismaMedia_UIKit_TestsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +89,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		84538AF125593289001CC6BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84538B38255959FB001CC6BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84538B4D255959FC001CC6BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84538B58255959FC001CC6BD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -98,6 +136,9 @@
 				84538AD325593288001CC6BD /* PrismaMedia_Test.app */,
 				84538AE925593289001CC6BD /* PrismaMedia_TestTests.xctest */,
 				84538AF425593289001CC6BD /* PrismaMedia_TestUITests.xctest */,
+				84538B3B255959FB001CC6BD /* PrismaMedia_UIKit_Tests.app */,
+				84538B50255959FC001CC6BD /* PrismaMedia_UIKit_TestsTests.xctest */,
+				84538B5B255959FC001CC6BD /* PrismaMedia_UIKit_TestsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,6 +146,7 @@
 		84538AD525593288001CC6BD /* PrismaMedia_Test */ = {
 			isa = PBXGroup;
 			children = (
+				84538AE425593289001CC6BD /* Info.plist */,
 				84538B12255940C0001CC6BD /* Models */,
 				84538B11255940B8001CC6BD /* Views */,
 				84538B10255940A7001CC6BD /* Controllers */,
@@ -138,7 +180,6 @@
 				84538AD825593288001CC6BD /* SceneDelegate.swift */,
 				84538ADF25593289001CC6BD /* Assets.xcassets */,
 				84538AE125593289001CC6BD /* LaunchScreen.storyboard */,
-				84538AE425593289001CC6BD /* Info.plist */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -224,6 +265,59 @@
 			productReference = 84538AF425593289001CC6BD /* PrismaMedia_TestUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		84538B3A255959FB001CC6BD /* PrismaMedia_UIKit_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84538B62255959FC001CC6BD /* Build configuration list for PBXNativeTarget "PrismaMedia_UIKit_Tests" */;
+			buildPhases = (
+				84538B37255959FB001CC6BD /* Sources */,
+				84538B38255959FB001CC6BD /* Frameworks */,
+				84538B39255959FB001CC6BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PrismaMedia_UIKit_Tests;
+			productName = PrismaMedia_UIKit_Tests;
+			productReference = 84538B3B255959FB001CC6BD /* PrismaMedia_UIKit_Tests.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84538B4F255959FC001CC6BD /* PrismaMedia_UIKit_TestsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84538B65255959FC001CC6BD /* Build configuration list for PBXNativeTarget "PrismaMedia_UIKit_TestsTests" */;
+			buildPhases = (
+				84538B4C255959FC001CC6BD /* Sources */,
+				84538B4D255959FC001CC6BD /* Frameworks */,
+				84538B4E255959FC001CC6BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84538B52255959FC001CC6BD /* PBXTargetDependency */,
+			);
+			name = PrismaMedia_UIKit_TestsTests;
+			productName = PrismaMedia_UIKit_TestsTests;
+			productReference = 84538B50255959FC001CC6BD /* PrismaMedia_UIKit_TestsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		84538B5A255959FC001CC6BD /* PrismaMedia_UIKit_TestsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84538B68255959FC001CC6BD /* Build configuration list for PBXNativeTarget "PrismaMedia_UIKit_TestsUITests" */;
+			buildPhases = (
+				84538B57255959FC001CC6BD /* Sources */,
+				84538B58255959FC001CC6BD /* Frameworks */,
+				84538B59255959FC001CC6BD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84538B5D255959FC001CC6BD /* PBXTargetDependency */,
+			);
+			name = PrismaMedia_UIKit_TestsUITests;
+			productName = PrismaMedia_UIKit_TestsUITests;
+			productReference = 84538B5B255959FC001CC6BD /* PrismaMedia_UIKit_TestsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -244,6 +338,17 @@
 						CreatedOnToolsVersion = 12.0.1;
 						TestTargetID = 84538AD225593288001CC6BD;
 					};
+					84538B3A255959FB001CC6BD = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					84538B4F255959FC001CC6BD = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 84538B3A255959FB001CC6BD;
+					};
+					84538B5A255959FC001CC6BD = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 84538B3A255959FB001CC6BD;
+					};
 				};
 			};
 			buildConfigurationList = 84538ACE25593288001CC6BD /* Build configuration list for PBXProject "PrismaMedia_Test" */;
@@ -262,6 +367,9 @@
 				84538AD225593288001CC6BD /* PrismaMedia_Test */,
 				84538AE825593289001CC6BD /* PrismaMedia_TestTests */,
 				84538AF325593289001CC6BD /* PrismaMedia_TestUITests */,
+				84538B3A255959FB001CC6BD /* PrismaMedia_UIKit_Tests */,
+				84538B4F255959FC001CC6BD /* PrismaMedia_UIKit_TestsTests */,
+				84538B5A255959FC001CC6BD /* PrismaMedia_UIKit_TestsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -285,6 +393,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		84538AF225593289001CC6BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84538B39255959FB001CC6BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84538B4E255959FC001CC6BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84538B59255959FC001CC6BD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -322,6 +451,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		84538B37255959FB001CC6BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84538B4C255959FC001CC6BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84538B57255959FC001CC6BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -334,6 +484,16 @@
 			isa = PBXTargetDependency;
 			target = 84538AD225593288001CC6BD /* PrismaMedia_Test */;
 			targetProxy = 84538AF525593289001CC6BD /* PBXContainerItemProxy */;
+		};
+		84538B52255959FC001CC6BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84538B3A255959FB001CC6BD /* PrismaMedia_UIKit_Tests */;
+			targetProxy = 84538B51255959FC001CC6BD /* PBXContainerItemProxy */;
+		};
+		84538B5D255959FC001CC6BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84538B3A255959FB001CC6BD /* PrismaMedia_UIKit_Tests */;
+			targetProxy = 84538B5C255959FC001CC6BD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -595,6 +755,124 @@
 			};
 			name = Release;
 		};
+		84538B63255959FC001CC6BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 32DX3M943S;
+				INFOPLIST_FILE = PrismaMedia_UIKit_Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.devios.PrismaMedia-UIKit-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84538B64255959FC001CC6BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 32DX3M943S;
+				INFOPLIST_FILE = PrismaMedia_UIKit_Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.devios.PrismaMedia-UIKit-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		84538B66255959FC001CC6BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 32DX3M943S;
+				INFOPLIST_FILE = PrismaMedia_UIKit_TestsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.devios.PrismaMedia-UIKit-TestsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PrismaMedia_UIKit_Tests.app/PrismaMedia_UIKit_Tests";
+			};
+			name = Debug;
+		};
+		84538B67255959FC001CC6BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 32DX3M943S;
+				INFOPLIST_FILE = PrismaMedia_UIKit_TestsTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.devios.PrismaMedia-UIKit-TestsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PrismaMedia_UIKit_Tests.app/PrismaMedia_UIKit_Tests";
+			};
+			name = Release;
+		};
+		84538B69255959FC001CC6BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 32DX3M943S;
+				INFOPLIST_FILE = PrismaMedia_UIKit_TestsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.devios.PrismaMedia-UIKit-TestsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PrismaMedia_UIKit_Tests;
+			};
+			name = Debug;
+		};
+		84538B6A255959FC001CC6BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 32DX3M943S;
+				INFOPLIST_FILE = PrismaMedia_UIKit_TestsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.devios.PrismaMedia-UIKit-TestsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PrismaMedia_UIKit_Tests;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -630,6 +908,33 @@
 			buildConfigurations = (
 				84538B0425593289001CC6BD /* Debug */,
 				84538B0525593289001CC6BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84538B62255959FC001CC6BD /* Build configuration list for PBXNativeTarget "PrismaMedia_UIKit_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84538B63255959FC001CC6BD /* Debug */,
+				84538B64255959FC001CC6BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84538B65255959FC001CC6BD /* Build configuration list for PBXNativeTarget "PrismaMedia_UIKit_TestsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84538B66255959FC001CC6BD /* Debug */,
+				84538B67255959FC001CC6BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84538B68255959FC001CC6BD /* Build configuration list for PBXNativeTarget "PrismaMedia_UIKit_TestsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84538B69255959FC001CC6BD /* Debug */,
+				84538B6A255959FC001CC6BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
