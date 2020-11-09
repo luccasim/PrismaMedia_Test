@@ -17,7 +17,10 @@ class UserViewController: UIViewController {
     @IBOutlet weak var activityMonitor: UIActivityIndicatorView!
     @IBOutlet weak var userStackView: UIStackView!
     
+    //MARK: - Models
+    
     private var user : User?
+    private var userRequest : ReqResWS = ReqResWS.shared
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -76,12 +79,16 @@ class UserViewController: UIViewController {
         }
     }
 
-    func fetchUser() {
+    private func fetchUser() {
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
             let user = User(fullName: "Luc CASIMIR", email: "casimir.luc@gmail.com", avatarURL: nil)
             self.set(User: user)
         }
         
+    }
+    
+    private func fetchAvatarImage() {
+                
     }
 }

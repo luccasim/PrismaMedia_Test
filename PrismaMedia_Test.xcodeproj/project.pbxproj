@@ -17,6 +17,7 @@
 		84538B1725594290001CC6BD /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84538B1625594290001CC6BD /* UserViewController.swift */; };
 		84538B1C255942B5001CC6BD /* UserSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84538B1B255942B5001CC6BD /* UserSettingViewController.swift */; };
 		84538B2125594A5E001CC6BD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84538B2025594A5E001CC6BD /* User.swift */; };
+		84538B8B25597ADA001CC6BD /* ReqResWS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84538B8A25597ADA001CC6BD /* ReqResWS.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		84538B3B255959FB001CC6BD /* PrismaMedia_UIKit_Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrismaMedia_UIKit_Tests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84538B50255959FC001CC6BD /* PrismaMedia_UIKit_TestsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrismaMedia_UIKit_TestsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84538B5B255959FC001CC6BD /* PrismaMedia_UIKit_TestsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrismaMedia_UIKit_TestsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84538B8A25597ADA001CC6BD /* ReqResWS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReqResWS.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				84538B2025594A5E001CC6BD /* User.swift */,
+				84538B8A25597ADA001CC6BD /* ReqResWS.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -430,6 +433,7 @@
 				84538AD725593288001CC6BD /* AppDelegate.swift in Sources */,
 				84538B1725594290001CC6BD /* UserViewController.swift in Sources */,
 				84538B1C255942B5001CC6BD /* UserSettingViewController.swift in Sources */,
+				84538B8B25597ADA001CC6BD /* ReqResWS.swift in Sources */,
 				84538B2125594A5E001CC6BD /* User.swift in Sources */,
 				84538AD925593288001CC6BD /* SceneDelegate.swift in Sources */,
 			);
